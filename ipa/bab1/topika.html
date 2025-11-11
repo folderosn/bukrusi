@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topik A: Rangka, Sendi, dan Otot</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Menggunakan font Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efek 'pop' saat hover pada kartu */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-5xl p-4 md:p-8">
+        
+        <!-- Tombol Kembali (ke Daftar Isi) -->
+        <div class="mb-6">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-lg shadow-sm text-sm font-medium hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                <!-- SVG Ikon Panah Kiri -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Kembali ke Daftar Isi
+            </a>
+        </div>
+
+        <!-- Header / Judul Utama -->
+        <header class="mb-8 text-center">
+            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Bab 1 - Topik A</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3">
+                Rangka, Sendi, & Otot 🤸
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                Pernah kepikiran gimana kamu bisa lari, lompat, atau main game? Itu semua berkat kerja sama tim yang super hebat di dalam tubuhmu! Yuk, kenalan sama mereka!
+            </p>
+        </header>
+
+        <!-- Konten Utama: 3 Aktor Utama -->
+        <div class="w-full">
+            <h2 class="text-3xl font-bold text-center mb-8">Kenalan Sama 3 Aktor Utamanya!</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                
+                <!-- Kartu 1: Rangka -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 card-hover">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">🦴</span>
+                        <h3 class="text-2xl font-bold text-gray-900">Rangka</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Ini adalah "fondasi" tubuhmu! Rangka (atau tulang-tulangmu) yang bikin kamu punya bentuk dan bisa berdiri tegak.
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-blue-800">Tugas Utamanya:</h4>
+                        <ul class="list-disc list-inside text-sm text-blue-700 mt-2 space-y-1">
+                            <li>Memberi bentuk tubuh</li>
+                            <li>Melindungi organ penting (kayak otak & jantung)</li>
+                            <li>Tempat nempelnya otot</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kartu 2: Sendi -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500 card-hover">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">🔗</span>
+                        <h3 class="text-2xl font-bold text-gray-900">Sendi</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Sendi adalah "engsel" di tubuhmu. Ini adalah tempat di mana dua tulang ketemu. Tanpa sendi, kamu bakal kaku kayak robot!
+                    </p>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800">Tugas Utamanya:</h4>
+                        <ul class="list-disc list-inside text-sm text-green-700 mt-2 space-y-1">
+                            <li>Menghubungkan antar tulang</li>
+                            <li>Bikin kamu bisa menekuk & memutar</li>
+                            <li>Membuat gerakan jadi luwes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kartu 3: Otot -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500 card-hover">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">💪</span>
+                        <h3 class="text-2xl font-bold text-gray-900">Otot</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Otot adalah "mesin penarik" yang nempel di tulangmu. Waktu otot bekerja (memendek), ia akan menarik tulang dan bikin kamu bergerak!
+                    </p>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-red-800">Tugas Utamanya:</h4>
+                        <ul class="list-disc list-inside text-sm text-red-700 mt-2 space-y-1">
+                            <li>Menggerakkan tulang</li>
+                            <li>Bekerja otomatis (Otot Polos & Jantung)</li>
+                            <li>Bekerja sesuai perintahmu (Otot Lurik)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bagian: Makin Kenal, Makin Jago! -->
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Makin Kenal, Makin Jago!</h2>
+            
+            <!-- Jenis-Jenis Sendi -->
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-md mb-8">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Jenis-Jenis Sendi Keren</h3>
+                <p class="text-gray-600 mb-6">Sendi di tubuhmu itu beda-beda. Ada yang kayak engsel pintu, ada yang bisa muter ke semua arah!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800">Sendi Engsel</h4>
+                        <p class="text-sm text-gray-700">Gerakannya satu arah, kayak engsel pintu. <br><strong>Contoh:</strong> Siku & Lutut.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <h4 class="font-bold text-blue-800">Sendi Peluru</h4>
+                        <p class="text-sm text-gray-700">Bisa gerak ke semua arah! <br><strong>Contoh:</strong> Bahu & Pinggul.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-bold text-purple-800">Sendi Putar</h4>
+                        <p class="text-sm text-gray-700">Bikin satu tulang bisa muter ngelilingin tulang lain. <br><strong>Contoh:</strong> Leher (buat geleng-geleng).</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                        <h4 class="font-bold text-yellow-800">Sendi Pelana</h4>
+                        <p class="text-sm text-gray-700">Gerakannya dua arah, kayak orang naik kuda. <br><strong>Contoh:</strong> Pangkal Ibu Jari.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jenis-Jenis Otot -->
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Tim Otot: Ada 3 Macam!</h3>
+                <div class="flex flex-col md:flex-row gap-4 text-center">
+                    <div class="flex-1 bg-red-50 p-5 rounded-lg border-2 border-red-200">
+                        <h4 class="text-xl font-bold text-red-700">Otot Lurik</h4>
+                        <p class="text-gray-700 mt-2">Ini otot yang bisa <strong>KAMU PERINTAH</strong>. Nempelnya di rangka. <br><strong>Contoh:</strong> Waktu kamu angkat tas atau nendang bola.</p>
+                    </div>
+                    <div class="flex-1 bg-indigo-50 p-5 rounded-lg border-2 border-indigo-200">
+                        <h4 class="text-xl font-bold text-indigo-700">Otot Polos</h4>
+                        <p class="text-gray-700 mt-2">Otot ini kerja <strong>OTOMATIS</strong> tanpa kamu sadari. <br><strong>Contoh:</strong> Di lambung (buat mencerna makanan) & di saluran napas.</p>
+                    </div>
+                    <div class="flex-1 bg-pink-50 p-5 rounded-lg border-2 border-pink-200">
+                        <h4 class="text-xl font-bold text-pink-700">Otot Jantung</h4>
+                        <p class="text-gray-700 mt-2">Otot spesial yang kerja <strong>OTOMATIS 24 JAM</strong> non-stop buat mompa darah. <br><strong>Tempat:</strong> Cuma ada di Jantung!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Check-Point Misi (Rangkuman) -->
+        <section class="mt-16">
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Check-Point Misi!
+                </h3>
+                <p class="font-medium mb-2">Jadi, ini yang udah kita pelajari:</p>
+                <ul class="list-disc list-outside ml-6 space-y-1 text-yellow-900">
+                    <li>Tubuh bisa gerak karena kerja sama <strong>Rangka, Sendi, dan Otot</strong>.</li>
+                    <li><strong>Rangka</strong> itu fondasi yang memberi bentuk dan melindungi organ.</li>
+                    <li><strong>Sendi</strong> itu penghubung antar tulang biar kita bisa menekuk.</li>
+                    <li><strong>Otot</strong> itu mesin yang menarik tulang untuk bergerak.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Navigasi Bawah -->
+        <footer class="flex justify-between items-center mt-12 border-t pt-6">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 bg-gray-200 text-gray-800 rounded-lg text-sm font-medium hover:bg-gray-300 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                Kembali ke Daftar Isi
+            </a>
+            
+            <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                Lanjut ke Topik B: Sistem Saraf
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
